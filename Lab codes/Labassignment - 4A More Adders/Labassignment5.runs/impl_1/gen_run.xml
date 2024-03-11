@@ -18,10 +18,13 @@
   <File Type="BITSTR-MMI" Name="lookahead_adder.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="lookahead_adder_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="lookahead_adder.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lookahead_adder_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="lookahead_adder.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="lookahead_adder.npi"/>
   <File Type="OPT-DRC" Name="lookahead_adder_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="lookahead_adder.rbd"/>
   <File Type="OPT-HWDEF" Name="lookahead_adder.hwdef"/>
   <File Type="PLACE-IO" Name="lookahead_adder_io_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="lookahead_adder_utilization_placed.rpt"/>
@@ -55,15 +58,12 @@
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="lookahead_adder_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="lookahead_adder_bus_skew_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="lookahead_adder_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lookahead_adder_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="lookahead_adder_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lookahead_adder_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="lookahead_adder.pdi"/>
   <File Type="RCFI_FILE" Name="lookahead_adder.rcfi"/>
   <File Type="CFI_FILE" Name="lookahead_adder.cfi"/>
   <File Type="RNPI_FILE" Name="lookahead_adder.rnpi"/>
-  <File Type="NPI_FILE" Name="lookahead_adder.npi"/>
-  <File Type="RBD_FILE" Name="lookahead_adder.rbd"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/lookahead_adder.v">
@@ -124,5 +124,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>
