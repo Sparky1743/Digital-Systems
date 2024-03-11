@@ -29,6 +29,7 @@ module clock_divider(
     end
     assign slow_clk= counter[27];
 endmodule
+// Use normal clk for simulation purposes
 module universal_shift_register(
     input [3:0]Q,
     input [1:0] mode,
